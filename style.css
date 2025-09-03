@@ -1,22 +1,9 @@
-/* Colors */
-/* Primary: #0071e3 */
-/* Primary hover: rgba(0, 113, 227, 0.9) */
-/* Secondary: #2997ff */
-/* Light: #f5f5f7 */
-/* Dark: #1d1d1f */
-/* White: #fff */
-/* Black: #000 */
-/* Gray: #888 */
-/* Apple gradient: linear-gradient(90deg, #0090f7 0%, #ba62fc 33.33%, #f2416b 66.67%, #f55600 100%) */
-/* Spacing: xs=4px, sm=8px, md=12px, lg=16px, xl=20px, xxl=24px */
-/* Typography: xs=12px, sm=14px, md=18px, lg=24px, xl=36px, xxl=52px */
-/* Border radius: sm=8px, md=12px, lg=16px, pill=999px */
-/* Transitions: default=all 0.3s ease */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 header img {
   width: 14px;
@@ -32,7 +19,6 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-  font-family: inherit;
 }
 .nav-bar {
   background: rgba(245, 245, 247, 0.8);
@@ -62,7 +48,6 @@ button {
   cursor: pointer;
 }
 .donation-ann {
-  background-color: #fff;
   background-color: #fff;
   padding-top: 44px;
   display: flex;
@@ -249,7 +234,7 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* Product Card Variants */
+/* Product Cards */
 .product-card-airpods .product-card-title,
 .product-card-airpods .product-card-subtitle {
   color: #fff;
@@ -277,11 +262,20 @@ button {
   gap: 16px;
   overflow-x: auto;
   padding-top: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.entertainment-carousel::-webkit-scrollbar {
+  display: none;
 }
 .entertainment-carousel img {
   width: 1250px;
   height: 668px;
   object-fit: cover;
+}
+
+.entertainment-carousel > div {
+  scroll-snap-align: center;
 }
 .bullet-container {
   display: flex;
@@ -296,18 +290,20 @@ button {
   background-color: grey;
   border-radius: 50%;
 }
-/* SERVICES CAROUSEL */
+/* CAROUSEL */
 .scroll-wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 .card-container {
-  height: 292px;
+  height: 260px;
   display: flex;
   gap: 16px;
   width: max-content;
-  animation: infiniteScroll 30s linear infinite;
+  animation: infiniteScroll 100s linear infinite;
 }
 .card-container:hover {
   animation-play-state: paused;
@@ -317,7 +313,7 @@ button {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-4600px));
+    transform: translateX(-4314px);
   }
 }
 .card {
@@ -449,29 +445,10 @@ button {
 }
 /* Responsive Styles */
 
-/* Large Screens (Desktops) */
-@media screen and (max-width: 1200px) {
-  .hero {
-    height: 700px;
-  }
-  .hero-content {
-    gap: 14px;
-  }
-  .product-card {
-    height: 500px;
-  }
-  .entertainment-carousel img {
-    width: 1000px;
-    height: 550px;
-  }
-}
-/* Medium Screens (Tablets and Small Laptops) */
+/* Tablet */
 @media screen and (max-width: 992px) {
   .hero {
     height: 500px;
-  }
-  .product-card-content {
-    margin-top: 28px;
   }
   .hero-content {
     gap: 12px;
@@ -488,9 +465,8 @@ button {
   .product-card {
     height: 450px;
   }
-  .product-card-content-bottom {
-    margin-top: auto;
-    margin-bottom: 58px;
+  .product-card-content {
+    margin-top: 28px;
   }
   .entertainment-carousel img {
     width: 800px;
@@ -506,8 +482,13 @@ button {
   .btn {
     padding: 10px 14px;
   }
+
+  .card-container {
+    height: 240px;
+  }
 }
-/* Small Screens (Tablets) */
+
+/* Mobile */
 @media screen and (max-width: 768px) {
   .nav-items {
     display: none;
@@ -516,40 +497,6 @@ button {
     justify-content: space-between;
     padding: 0 16px;
   }
-  .hero {
-    height: 550px;
-  }
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-subtitle {
-    font-size: 1.125rem;
-  }
-  .entertainment-carousel img {
-    width: 650px;
-    height: 400px;
-  }
-  .card {
-    width: 300px;
-    height: 200px;
-  }
-  .product-card-content {
-    margin-top: 20px;
-  }
-  .product-card-content-bottom {
-    margin-top: auto;
-    margin-bottom: 58px;
-  }
-  .img-opt-1 {
-    width: 130px;
-    height: 130px;
-  }
-  .btn {
-    padding: 10px 14px;
-  }
-}
-/* Extra Small Screens (Mobile Phones) */
-@media screen and (max-width: 576px) {
   .hero {
     height: 450px;
   }
@@ -562,10 +509,6 @@ button {
   .hero-subtitle {
     font-size: 1rem;
   }
-  .hero-actions {
-    flex-direction: row;
-    gap: 12px;
-  }
   .product-card {
     height: 400px;
   }
@@ -574,10 +517,6 @@ button {
   }
   .product-card-subtitle {
     font-size: 1rem;
-  }
-  .product-card-actions {
-    flex-direction: row;
-    gap: 12px;
   }
   .entertainment-carousel img {
     width: 400px;
@@ -591,51 +530,11 @@ button {
     width: 100px;
     height: 100px;
   }
-  .text-logo-container p {
-    font-size: 0.75rem;
-  }
-  .donation-ann p {
-    font-size: 0.75rem;
-    padding: 16px 12px;
-  }
   .btn {
     padding: 8px 12px;
   }
-}
-/* Very Small Screens (Small Mobile Phones) */
-@media screen and (max-width: 375px) {
-  .hero {
-    height: 350px;
-  }
-  .hero-title {
-    font-size: 1.5rem;
-  }
-  .hero-subtitle {
-    font-size: 0.875rem;
-  }
-  .btn {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-  .product-card {
-    height: 350px;
-  }
-  .product-card-badge {
-    padding-top: 250px;
-  }
-  .entertainment-carousel img {
-    width: 320px;
-    height: 250px;
-  }
-  .card {
-    width: 220px;
-    height: 160px;
-  }
-  .img-opt-1 {
-    width: 80px;
-    height: 80px;
-  }
-  .btn {
-    padding: 8px 12px;
+
+  .card-container {
+    height: 200px;
   }
 }
