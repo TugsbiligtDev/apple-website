@@ -1,43 +1,17 @@
-:root {
-  /* Colors */
-  --color-primary: #0071e3;
-  --color-primary-hover: rgba(0, 113, 227, 0.9);
-  --color-secondary: #2997ff;
-  --color-light: #f5f5f7;
-  --color-dark: #1d1d1f;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-gray: #888;
-  /* Gradients */
-  --gradient-apple: linear-gradient(
-    90deg,
-    #0090f7 0%,
-    #ba62fc 33.33%,
-    #f2416b 66.67%,
-    #f55600 100%
-  );
-  /* Spacing */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 12px;
-  --spacing-lg: 16px;
-  --spacing-xl: 20px;
-  --spacing-xxl: 24px;
-  /* Typography */
-  --font-xs: 12px;
-  --font-sm: 14px;
-  --font-md: 18px;
-  --font-lg: 24px;
-  --font-xl: 36px;
-  --font-xxl: 52px;
-  /* Border radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-pill: 999px;
-  /* Transitions */
-  --transition-default: all 0.3s ease;
-}
+/* Colors */
+/* Primary: #0071e3 */
+/* Primary hover: rgba(0, 113, 227, 0.9) */
+/* Secondary: #2997ff */
+/* Light: #f5f5f7 */
+/* Dark: #1d1d1f */
+/* White: #fff */
+/* Black: #000 */
+/* Gray: #888 */
+/* Apple gradient: linear-gradient(90deg, #0090f7 0%, #ba62fc 33.33%, #f2416b 66.67%, #f55600 100%) */
+/* Spacing: xs=4px, sm=8px, md=12px, lg=16px, xl=20px, xxl=24px */
+/* Typography: xs=12px, sm=14px, md=18px, lg=24px, xl=36px, xxl=52px */
+/* Border radius: sm=8px, md=12px, lg=16px, pill=999px */
+/* Transitions: default=all 0.3s ease */
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +26,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--color-black);
+  color: #000;
 }
 button {
   border: none;
@@ -67,18 +41,18 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--spacing-xl);
+  padding: 0 20px;
   position: fixed;
-  gap: var(--spacing-xl);
+  gap: 24px;
 }
 .nav-items {
   display: flex;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: 24px;
 }
 .nav-bar li {
-  color: var(--color-black);
-  font-size: var(--font-xs);
+  color: #000;
+  font-size: 12px;
   letter-spacing: -0.28px;
   font-weight: 400;
 }
@@ -89,7 +63,7 @@ button {
 }
 .donation-ann {
   background-color: #fff;
-  background-color: var(--color-white);
+  background-color: #fff;
   padding-top: 44px;
   display: flex;
   align-items: center;
@@ -97,48 +71,48 @@ button {
   text-align: center;
 }
 .donation-ann p {
-  padding: var(--spacing-xl) 0;
-  color: var(--color-dark);
-  font-size: var(--font-sm);
+  padding: 20px 0;
+  color: #1d1d1f;
+  font-size: 14px;
 }
 /* Buttons */
 .btn {
   display: inline-block;
-  border-radius: var(--radius-pill);
-  padding: var(--spacing-md) var(--spacing-xl);
-  transition: var(--transition-default);
-  font-size: var(--font-sm);
+  border-radius: 999px;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  font-size: 14px;
 }
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #0071e3;
+  color: #fff;
 }
 .btn-primary:hover {
-  background-color: var(--color-primary-hover);
+  background-color: rgba(0, 113, 227, 0.9);
 }
 .btn-outline {
   border: 1px solid;
 }
 .btn-light-outline {
-  border-color: var(--color-secondary);
-  color: var(--color-secondary);
+  border-color: #2997ff;
+  color: #2997ff;
 }
 .btn-light-outline:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  background-color: #0071e3;
+  color: #fff;
+  border-color: #0071e3;
 }
 .btn-white-outline {
-  border-color: var(--color-white);
-  color: var(--color-white);
+  border-color: #fff;
+  color: #fff;
 }
 .btn-white-outline:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: #fff;
+  color: #000;
 }
 .btn-light {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: #fff;
+  color: #000;
 }
 .btn-light:hover {
   background-color: rgba(255, 255, 255, 0.9);
@@ -147,8 +121,8 @@ button {
 .hero-section {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .hero {
   height: 692px;
@@ -163,7 +137,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding-top: 3%;
-  gap: var(--spacing-xl);
+  gap: 20px;
 }
 .hero-content-bottom {
   margin-top: auto;
@@ -171,21 +145,21 @@ button {
   padding-bottom: 55px;
 }
 .hero-title {
-  color: var(--color-light);
-  font-size: var(--font-xxl);
+  color: #f5f5f7;
+  font-size: 52px;
   font-weight: 600;
   letter-spacing: -0.28px;
 }
 .hero-subtitle {
-  color: var(--color-light);
-  font-size: var(--font-lg);
+  color: #f5f5f7;
+  font-size: 24px;
   font-weight: 400;
   margin-top: -10px;
 }
 .hero-actions {
   display: flex;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-md);
+  gap: 16px;
+  margin-top: 12px;
 }
 .hero-iphone-pro {
   background-image: url(./assets/firs-hero.jpg);
@@ -198,13 +172,13 @@ button {
 }
 .hero-gift .hero-title,
 .hero-gift .hero-subtitle {
-  color: var(--color-black);
+  color: #000;
 }
 /* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-md);
+  gap: 12px;
   padding: 0 12px;
 }
 .product-card {
@@ -226,45 +200,51 @@ button {
   margin-bottom: 58px;
 }
 .product-card-title {
-  font-size: var(--font-xl);
+  font-size: 36px;
   font-weight: 600;
-  color: var(--color-dark);
+  color: #1d1d1f;
 }
 .product-card-subtitle {
-  font-size: var(--font-md);
+  font-size: 18px;
   font-weight: 400;
-  color: var(--color-dark);
-  margin-top: var(--spacing-sm);
+  color: #1d1d1f;
+  margin-top: 8px;
   text-align: center;
 }
 .product-card-actions {
   display: flex;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-xl);
+  gap: 16px;
+  margin-top: 20px;
 }
 .product-card-logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 8px;
 }
 .product-card-logo span {
-  font-size: var(--font-xl);
+  font-size: 36px;
   font-weight: 700;
-  color: var(--color-black);
+  color: #000;
 }
 .product-card-series {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: var(--color-black);
-  margin: var(--spacing-xs) 0;
+  color: #000;
+  margin: 4px 0;
 }
 .product-card-badge {
   margin-top: auto;
   padding-top: 324px;
-  font-size: var(--font-sm);
+  font-size: 14px;
   font-weight: 500;
-  background: var(--gradient-apple);
+  background: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -272,7 +252,7 @@ button {
 /* Product Card Variants */
 .product-card-airpods .product-card-title,
 .product-card-airpods .product-card-subtitle {
-  color: var(--color-white);
+  color: #fff;
 }
 .product-card-ipad {
   background-image: url(./assets/grid-ipad.jpg);
@@ -294,9 +274,9 @@ button {
 }
 .entertainment-carousel {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: 16px;
   overflow-x: auto;
-  padding-top: var(--spacing-md);
+  padding-top: 12px;
 }
 .entertainment-carousel img {
   width: 1250px;
@@ -308,7 +288,7 @@ button {
   padding: 12px 0;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-md);
+  gap: 12px;
 }
 .bullet {
   width: 8px;
@@ -375,8 +355,8 @@ button {
   opacity: 1;
 }
 .card p {
-  color: var(--color-black);
-  font-size: var(--font-sm);
+  color: #000;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.224px;
 }
@@ -384,7 +364,7 @@ button {
   background-color: #1b2733;
 }
 .card-content {
-  padding: var(--spacing-xl) 15px;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -435,8 +415,8 @@ button {
   align-items: flex-end;
 }
 .text-logo-container p {
-  color: var(--color-white);
-  font-size: var(--font-sm);
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.224px;
 }
@@ -534,7 +514,7 @@ button {
   }
   .nav-bar {
     justify-content: space-between;
-    padding: 0 var(--spacing-lg);
+    padding: 0 16px;
   }
   .hero {
     height: 550px;
@@ -584,7 +564,7 @@ button {
   }
   .hero-actions {
     flex-direction: row;
-    gap: var(--spacing-md);
+    gap: 12px;
   }
   .product-card {
     height: 400px;
@@ -597,7 +577,7 @@ button {
   }
   .product-card-actions {
     flex-direction: row;
-    gap: var(--spacing-md);
+    gap: 12px;
   }
   .entertainment-carousel img {
     width: 400px;
@@ -616,7 +596,7 @@ button {
   }
   .donation-ann p {
     font-size: 0.75rem;
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 16px 12px;
   }
   .btn {
     padding: 8px 12px;
@@ -634,8 +614,8 @@ button {
     font-size: 0.875rem;
   }
   .btn {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    font-size: var(--font-xs);
+    padding: 8px 16px;
+    font-size: 12px;
   }
   .product-card {
     height: 350px;
