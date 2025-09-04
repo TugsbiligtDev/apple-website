@@ -147,13 +147,13 @@ button {
   margin-top: 12px;
 }
 .hero-iphone-pro {
-  background-image: url(./assets/firs-hero.jpg);
+  background-image: url(./assets/first-hero.webp);
 }
 .hero-iphone {
-  background-image: url(./assets/second-hero.jpg);
+  background-image: url(./assets/second-hero.webp);
 }
 .hero-gift {
-  background-image: url(./assets/third-hero.jpg);
+  background-image: url(./assets/third-hero.webp);
 }
 .hero-gift .hero-title,
 .hero-gift .hero-subtitle {
@@ -240,22 +240,22 @@ button {
   color: #fff;
 }
 .product-card-ipad {
-  background-image: url(./assets/grid-ipad.jpg);
+  background-image: url(./assets/grid-ipad.webp);
 }
 .product-card-airpods {
-  background-image: url(./assets/grid-airpod.jpg);
+  background-image: url(./assets/grid-airpod.webp);
 }
 .product-card-watch {
-  background-image: url(./assets/grid-watch.jpg);
+  background-image: url(./assets/grid-watch.webp);
 }
 .product-card-macbook {
-  background-image: url(./assets/grid-macbook.jpg);
+  background-image: url(./assets/grid-macbook.webp);
 }
 .product-card-trade {
-  background-image: url(./assets/grid-trade-in.jpg);
+  background-image: url(./assets/grid-trade-in.webp);
 }
 .product-card-card {
-  background-image: url(./assets/grid-card.jpg);
+  background-image: url(./assets/grid-card.webp);
 }
 .entertainment-carousel {
   display: flex;
@@ -383,7 +383,7 @@ button {
   background-size: cover;
 }
 .img-1 {
-  background-image: url("./assets/1.jpg");
+  background-image: url("./assets/1.webp");
 }
 .logo-container {
   display: flex;
@@ -393,15 +393,15 @@ button {
   background-color: #ebe6e1;
 }
 .img-2 {
-  background-image: url("./assets/2.jpg");
+  background-image: url("./assets/2.webp");
 }
 .img-3 {
-  background-image: url("./assets/3.jpg");
+  background-image: url("./assets/3.webp");
   width: 100%;
   height: 100%;
 }
 .card-3 {
-  background-image: url("./assets/3.jpg");
+  background-image: url("./assets/3.webp");
 }
 .text-logo-container {
   height: 100%;
@@ -417,28 +417,28 @@ button {
   letter-spacing: -0.224px;
 }
 .card-4 {
-  background-image: url("./assets/4.jpg");
+  background-image: url("./assets/4.webp");
 }
 .card-5 {
-  background-image: url("./assets/5.jpg");
+  background-image: url("./assets/5.webp");
 }
 .card-6 {
-  background-image: url("./assets/6.jpg");
+  background-image: url("./assets/6.webp");
 }
 .card-7 {
-  background-image: url("./assets/7.jpg");
+  background-image: url("./assets/7.webp");
 }
 .card-8 {
   background-color: #400c0f;
 }
 .img-8 {
-  background-image: url("./assets/8.jpg");
+  background-image: url("./assets/8.webp");
 }
 .card-9 {
-  background-image: url("./assets/9.jpg");
+  background-image: url("./assets/9.webp");
 }
 .img-10 {
-  background-image: url("./assets/10.jpg");
+  background-image: url("./assets/10.webp");
 }
 .card-10 {
   background-color: #262626;
