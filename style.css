@@ -8,6 +8,10 @@
 header img {
   width: 14px;
 }
+.nav-bar img {
+  width: 16px;
+  height: auto;
+}
 ul {
   list-style: none;
 }
@@ -231,8 +235,7 @@ button {
     #f55600 100%
   );
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 /* Product Cards */
 .product-card-airpods .product-card-title,
@@ -263,10 +266,7 @@ button {
   overflow-x: auto;
   padding-top: 12px;
   scroll-snap-type: x mandatory;
-}
-
-.entertainment-carousel::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: none;
 }
 .entertainment-carousel img {
   width: 1250px;
@@ -389,16 +389,15 @@ button {
   display: flex;
   align-items: end;
 }
+.logo-size {
+  width: 24px;
+  height: 24px;
+}
 .card-2 {
   background-color: #ebe6e1;
 }
 .img-2 {
   background-image: url("./assets/2.webp");
-}
-.img-3 {
-  background-image: url("./assets/3.webp");
-  width: 100%;
-  height: 100%;
 }
 .card-3 {
   background-image: url("./assets/3.webp");
